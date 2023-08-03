@@ -55,8 +55,18 @@ In this version, we use NumPy's array operations to find the positions of matchi
 
 ### [Pandas Merge](https://github.com/huolter/1Mx1M-matching/blob/main/pandas_merge.py)
 
-In this solution, we use pandas to convert both lists (list1 and list2) into data frames (df1 and df2). We then perform an inner merge operation between the data frames based on the common elements between the two lists. The result of the merge is a new data frame containing the matching elements and their positions in both lists.
+In this solution, we use pandas to convert both lists (list1 and list2) into data frames (df1 and df2). We then perform an inner [merge operation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html) between the data frames based on the common elements between the two lists. The result of the merge is a new data frame containing the matching elements and their positions in both lists.
 
 Finally, we convert the resulting data frame to a list of tuples (matches_list), containing the matching element and its positions, which is the desired output.
 
 **Execution time: 1.3652698993682861 seconds**
+
+### [Dask Bags]()
+
+In this version, we use [Dask.bag](https://docs.dask.org/en/stable/bag.html) to create distributed bags from the input lists. The db.from_sequence() function parallelizes the creation of the bags, allowing for better scalability with larger datasets.
+
+The common elements are found using the set intersection operation between the two bags. After that, the code proceeds to find the positions of matching elements in both lists, similar to the previous versions.
+
+Dask can efficiently handle large datasets and parallelize operations across multiple cores, making it a powerful choice for performance-critical tasks.
+
+**Execution time: 5.9499101638793945 seconds**

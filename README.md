@@ -14,14 +14,16 @@
 #### [Double For Matching](https://github.com/huolter/1Mx1M-matching/blob/main/double_for_matching.py)
 The worst possible scenario. This repo was inspired by the story of a programmer that took this approach to solve a similar problem. 
 Two nested loops that lead to O(n^2) time. A real disaster. 
-Running time in my AMD Ryzen 5 5500U w/ 16GB ram: NEVER ENDED XD
+
+**Running time in my AMD Ryzen 5 5500U w/ 16GB ram: NEVER ENDED XD**
 
 #### [Sets Intersection](https://github.com/huolter/1Mx1M-matching/blob/main/sets_intersection.py)
 Transform the lists into sets and use intersection(). By converting the lists to sets and performing the intersection operation using sets, we reduce the complexity from O(n^2) to O(n), where n is the number of elements in each list. This will significantly improve the execution time for large datasets.
-Execution time (same hardware): 2.81931734085083 seconds
+
+**Execution time (same hardware): 2.81931734085083 seconds**
 
 
-#### [Hash and Match]()
+#### [Hash and Match](https://github.com/huolter/1Mx1M-matching/blob/main/hash_and_match.py)
 
 The algorithmic approach used in the script is an efficient method to find matches between two large lists of elements. The main steps of the approach are as follows:
 
@@ -31,4 +33,4 @@ The algorithmic approach used in the script is an efficient method to find match
 
 The key to the efficiency of this approach is the use of a hash table, which allows for constant-time lookups. By building the hash table for list1 once and then performing lookups for each element in list2, the algorithm reduces the overall time complexity to O(n), where n is the total number of elements in both lists.
 
-Execution time: 1.234602928161621 seconds
+**Execution time: 1.234602928161621 seconds**

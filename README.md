@@ -6,7 +6,7 @@
 * each element is a 6 chars string (upercase, lowercase and numbers)
 * you want to: 
     * find the matching elements between lists
-    * store the mathing elment, and the position in list1 and list2
+    * store the matching elment and the position the element has in both original lists
 * have fun :-)
 
 ## Why?

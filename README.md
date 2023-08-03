@@ -34,3 +34,25 @@ The algorithmic approach used in the script is an efficient method to find match
 The key to the efficiency of this approach is the use of a hash table, which allows for constant-time lookups. By building the hash table for list1 once and then performing lookups for each element in list2, the algorithm reduces the overall time complexity to O(n), where n is the total number of elements in both lists.
 
 **Execution time: 1.234602928161621 seconds**
+
+### [Sets Comprahension]()
+
+This solution still utilizes sets to find common elements between the two lists, but instead of building a hash table, it directly finds the positions of matching elements using list comprehensions. The code is more concise and efficient since it doesn't store all the intermediate positions in separate lists. Instead, it directly extends the matches list with tuples containing the element and its positions in list1 and list2.
+
+The use of sets ensures faster lookups when finding common elements, and the overall time complexity of the solution remains O(n), where n is the total number of elements in both lists.
+
+**Execution time: 2.7240407466888428 seconds**
+
+### [Numpy Where]()
+
+In this version, we use NumPy's array operations to find the positions of matching elements. The np.where() function returns the indices of elements that satisfy the condition, and we use this to find the positions of the matching elements in both lists.
+
+**Execution time: 8.953785181045532 seconds**
+
+### [Pandas Merge]()
+
+In this solution, we use pandas to convert both lists (list1 and list2) into data frames (df1 and df2). We then perform an inner merge operation between the data frames based on the common elements between the two lists. The result of the merge is a new data frame containing the matching elements and their positions in both lists.
+
+Finally, we convert the resulting data frame to a list of tuples (matches_list), containing the matching element and its positions, which is the desired output.
+
+**Execution time: 1.3652698993682861 seconds**

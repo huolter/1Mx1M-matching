@@ -70,3 +70,11 @@ The common elements are found using the set intersection operation between the t
 Dask can efficiently handle large datasets and parallelize operations across multiple cores, making it a powerful choice for performance-critical tasks.
 
 **Execution time: 5.9499101638793945 seconds**
+
+### [Pandarallel]()
+
+In this solution, we use the [pandarallel](https://pypi.org/project/pandarallel/) library along with pandas to enable parallel processing. The pandarallel library allows pandas to perform operations in parallel across multiple CPU cores.
+
+We convert list1 and list2 into pandas data frames (df1 and df2) and perform an inner merge operation based on the common elements between the two data frames. The result of the merge is a new data frame (common_elements) containing the matching elements and their positions in both lists.
+
+**Execution time: 1.60727858543396 seconds**

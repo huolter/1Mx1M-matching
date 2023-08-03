@@ -2,7 +2,7 @@
 
 ## What?
 
-* you have 2 lists of 1M elements
+* you have 2 lists of 1M elements (generated with [this script](https://github.com/huolter/1Mx1M-matching/blob/main/generator.py))
 * each element is a 6 chars string (upercase, lowercase and numbers)
 * you want to: 
     * find the matching elements between lists

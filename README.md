@@ -61,7 +61,7 @@ Finally, we convert the resulting data frame to a list of tuples (matches_list),
 
 **Execution time: 1.3652698993682861 seconds**
 
-### [Dask Bags]()
+### [Dask Bags](https://github.com/huolter/1Mx1M-matching/blob/main/dask_bags.py)
 
 In this version, we use [Dask.bag](https://docs.dask.org/en/stable/bag.html) to create distributed bags from the input lists. The db.from_sequence() function parallelizes the creation of the bags, allowing for better scalability with larger datasets.
 
@@ -71,7 +71,7 @@ Dask can efficiently handle large datasets and parallelize operations across mul
 
 **Execution time: 5.9499101638793945 seconds**
 
-### [Pandarallel]()
+### [Pandarallel](https://github.com/huolter/1Mx1M-matching/blob/main/pandarallel_pandas.py)
 
 In this solution, we use the [pandarallel](https://pypi.org/project/pandarallel/) library along with pandas to enable parallel processing. The pandarallel library allows pandas to perform operations in parallel across multiple CPU cores.
 

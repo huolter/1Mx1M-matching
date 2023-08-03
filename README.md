@@ -11,7 +11,7 @@
 
 ## Why?
 
-Some days ago we -wife <3 and I- had lunch with a friend and he told us the story of a programmer at his job that tried to solve a similar problem using a poor perfoming approach, something like the nested for loops. I kept thinking about this and decided to collect different solutions. 
+Some days ago we -wife and I- had lunch with a friend and he told us the story of a programmer at his job that tried to solve a similar problem using a poor perfoming approach, something like the nested for loops. I kept thinking about this and decided to collect different solutions. 
 
 ## Scripts
 

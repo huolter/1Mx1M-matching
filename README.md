@@ -4,10 +4,14 @@
 
 * you have 2 lists of 1M elements
 * each element is a 6 chars string (upercase, lowercase and numbers)
-* you want to 
+* you want to: 
     * find the matching elements between lists
     * store the mathing elment, and the position in list1 and list2
-* have fun writing as many different solutions as you -or a LLM- can came up with
+* have fun :-)
+
+## Why?
+
+Some days ago we -wife <3 and I- had lunch with a friend and he told us the story of a programmer at his job that tried to solve a similar problem using a poor perfoming approach, something like the nested for loops. I kept thinking about this and decided to collect different solutions. 
 
 ## Scripts
 

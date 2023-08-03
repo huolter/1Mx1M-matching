@@ -1,12 +1,12 @@
-#1Mx1M Matching Challenge
+# 1Mx1M Matching Challenge
 
 ### What?
 
 * you have 2 lists of 1M elements
 * each element is a 6 chars string (upercase, lowercase and numbers)
 * you want to 
-** find the matching elements between lists
-** store the mathing elment, and the position in list1 and list2
+    * find the matching elements between lists
+    * store the mathing elment, and the position in list1 and list2
 * have fun writing as many different solutions as you -or a LLM- can came up with
 
 ### Scripts

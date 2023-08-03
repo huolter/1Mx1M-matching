@@ -11,7 +11,7 @@
 
 ### Scripts
 
-#### Double For Matching [https://github.com/huolter/1Mx1M-matching/blob/main/double_for_matching.py]
+#### [Double For Matching](https://github.com/huolter/1Mx1M-matching/blob/main/double_for_matching.py)
 The worst possible scenario. This repo was inspired by the story of a programmer that took this approach to solve a similar problem. 
 Two nested loops that lead to O(n^2) time. A real disaster. 
 Running time in my AMD Ryzen 5 5500U w/ 16GB ram: NEVER ENDED XD

@@ -1,0 +1,40 @@
+import pickle
+import time
+
+
+def find_matches(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    common_elements = set1.intersection(set2)
+
+    matches = []
+    for element in common_elements:
+        position_list1 = [i for i, x in enumerate(list1) if x == element]
+        position_list2 = [i for i, x in enumerate(list2) if x == element]
+        matches.append((element, position_list1, position_list2))
+    return matches
+
+
+def load_list_from_file(filename):
+    with open(filename, "rb") as file:
+        data_list = pickle.load(file)
+    return data_list
+
+
+def main():
+    list1 = load_list_from_file("list1.pkl")
+    list2 = load_list_from_file("list2.pkl")
+
+    start_time = time.time()
+    matches_list = find_matches(list1, list2)
+    end_time = time.time()
+
+    print(len(matches_list), "matches found.")
+    print(matches_list[:10])
+
+    execution_time = end_time - start_time
+    print("Execution time:", execution_time, "seconds")
+
+
+if __name__ == "__main__":
+    main()

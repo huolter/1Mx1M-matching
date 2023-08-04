@@ -24,7 +24,7 @@ Two nested loops that lead to O(n^2) time. A real disaster.
 ### [Sets Intersection](https://github.com/huolter/1Mx1M-matching/blob/main/sets_intersection.py)
 Transform the lists into sets and use intersection(). By converting the lists to sets and performing the intersection operation using sets, we reduce the complexity from O(n^2) to O(n), where n is the number of elements in each list. This will significantly improve the execution time for large datasets.
 
-**Execution time (same hardware): 2.81931734085083 seconds**
+**Execution time (same hardware): 2.81 seconds**
 
 
 ### [Hash and Match](https://github.com/huolter/1Mx1M-matching/blob/main/hash_and_match.py)
@@ -37,7 +37,7 @@ The algorithmic approach used in the script is an efficient method to find match
 
 The key to the efficiency of this approach is the use of a hash table, which allows for constant-time lookups. By building the hash table for list1 once and then performing lookups for each element in list2, the algorithm reduces the overall time complexity to O(n), where n is the total number of elements in both lists.
 
-**Execution time: 1.234602928161621 seconds**
+**Execution time: 1.23 seconds**
 
 ### [Sets Comprehension](https://github.com/huolter/1Mx1M-matching/blob/main/sets_comprehension.py)
 
@@ -45,13 +45,13 @@ This solution still utilizes sets to find common elements between the two lists,
 
 The use of sets ensures faster lookups when finding common elements, and the overall time complexity of the solution remains O(n), where n is the total number of elements in both lists.
 
-**Execution time: 2.7240407466888428 seconds**
+**Execution time: 2.72 seconds**
 
 ### [Numpy Where](https://github.com/huolter/1Mx1M-matching/blob/main/numpy_where.py)
 
 In this version, we use NumPy's array operations to find the positions of matching elements. The np.where() function returns the indices of elements that satisfy the condition, and we use this to find the positions of the matching elements in both lists.
 
-**Execution time: 8.953785181045532 seconds**
+**Execution time: 8.95 seconds**
 
 ### [Pandas Merge](https://github.com/huolter/1Mx1M-matching/blob/main/pandas_merge.py)
 
@@ -59,7 +59,7 @@ In this solution, we use pandas to convert both lists (list1 and list2) into dat
 
 Finally, we convert the resulting data frame to a list of tuples (matches_list), containing the matching element and its positions, which is the desired output.
 
-**Execution time: 1.3652698993682861 seconds**
+**Execution time: 1.36 seconds**
 
 ### [Dask Bags](https://github.com/huolter/1Mx1M-matching/blob/main/dask_bags.py)
 
@@ -69,7 +69,7 @@ The common elements are found using the set intersection operation between the t
 
 Dask can efficiently handle large datasets and parallelize operations across multiple cores, making it a powerful choice for performance-critical tasks.
 
-**Execution time: 5.9499101638793945 seconds**
+**Execution time: 5.94 seconds**
 
 ### [Pandarallel](https://github.com/huolter/1Mx1M-matching/blob/main/pandarallel_pandas.py)
 
@@ -77,4 +77,4 @@ In this solution, we use the [pandarallel](https://pypi.org/project/pandarallel/
 
 We convert list1 and list2 into pandas data frames (df1 and df2) and perform an inner merge operation based on the common elements between the two data frames. The result of the merge is a new data frame (common_elements) containing the matching elements and their positions in both lists.
 
-**Execution time: 1.60727858543396 seconds**
+**Execution time: 1.60 seconds**
